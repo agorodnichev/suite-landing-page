@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= require('./assets/favicon-32x32.png') %>">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <img src="<%= require('./assets/logo.svg') %>" alt="logo" class="logo header__logo">
+    <a href="#" class="button header__button">Request Beta Access</a>
+  </header>
+  <main class="main">
+    <section class="section1">
+      <div class="intro-container">
+        <h1 class="intro-container__heading">A <strong>super <span class="solution">solution</span></strong> for your <strong>business.</strong></h1>
+        <p>Our marketing and sales automations help you scale your outreach to get more leads for your company.</p>
+        <a href="#" class="intro-container__button button">Request Beta Access</a>
+      </div>
+      <div class="image-phone-container">
+        <picture>
+          <source media="(max-width: 45em)" type="image/webp" srcset="<%= require('./assets/image-hero-landscape.webp') %>, <%= require('./assets/image-hero-landscape@2x.webp') %> 2x">
+          <source media="(max-width: 45em)" type="image/png" srcset="<%= require('./assets/image-hero-landscape.png') %>, <%= require('./assets/image-hero-landscape@2x.png') %> 2x">
+          <source type="image/webp" srcset="<%= require('./assets/image-hero-portrait.webp') %>, <%= require('./assets/image-hero-portrait@2x.webp') %> 2x">
+          <source type="image/png" srcset="<%= require('./assets/image-hero-portrait.png') %>, <%= require('./assets/image-hero-portrait@2x.png') %> 2x">
+          <img src="<%= require('./assets/image-hero-landscape.png') %>" alt="" srcset="<%= require('./assets/image-hero-landscape.webp') %>, <%= require('./assets/image-hero-landscape@2x.webp') %> 2x">
+        </picture>
+      </div>
+      <div class="statistic-container">
+        <div class="stat-1 stat">
+          <h2>2K+</h2>
+          <em>companies</em>
+        </div>
+        <div class="stat-2 stat">
+          <h2>8</h2>
+          <em>languages</em>
+        </div>
+        <div class="stat-3 stat">
+          <h2>1.2M</h2>
+          <em>leads</em>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="image-jeremy-container">
+        <picture>
+          <source media="(max-width: 75em)" srcset="<%= require('./assets/image-jeremy-small.webp') %>, <%= require('./assets/image-jeremy-small@2x.webp') %> 2x" type="image/webp">
+          <source media="(max-width: 75em)" srcset="<%= require('./assets/image-jeremy-small.png') %>, <%= require('./assets/image-jeremy-small@2x.png') %> 2x" type="image/png">
+          <source srcset="<%= require('./assets/image-jeremy-large.webp') %>, <%= require('./assets/image-jeremy-large@2x.webp') %> 2x" type="image/webp">
+          <source srcset="<%= require('./assets/image-jeremy-large.png') %>, <%= require('./assets/image-jeremy-large@2x.png') %> 2x" type="image/png">
+          <img src="<%= require('./assets/image-jeremy-small.png') %>" alt="" class="image">
+        </picture>
+      </div>
+      <img class="curve-2 curve" src="<%= require('./assets/pattern-curved-line-2.svg') %>" alt="">
+      <div class="quote-container">
+        <h2>It just <strong>works.</strong></h2>
+        <q>I really like how it is an all-in-one solution that handle many of the tasks that you would normally need separate tools to do the same job. This thing is a miracle worker.</q>
+        <br>
+        <span class="quote-author">JEREMY ROBINSON</span><br>
+        <span class="author-location">CMO, FYLO</span>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <img src="<%= require('./assets/logo.svg') %>" alt="logo">
+    <p>Copyright - Suite</p>
+    <div class="footer-icons-container">
+      <img src="<%= require('./assets/icon-facebook.svg') %>" alt="facebook">
+      <img src="<%= require('./assets/icon-twitter.svg') %>" alt="twitter">
+      <img src="<%= require('./assets/icon-instagram.svg') %>" alt="instagram">
+    </div>
+  </footer>
+</body>
+</html>
